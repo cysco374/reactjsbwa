@@ -4,6 +4,8 @@ import './App.css';
 import ReviewItems from './Reviews';
 import FotoProduk from './Foto';
 import ProdukInfo from './ProdukInfo';
+import CheckDiscount from './Discount';
+import PropTypes from 'prop-types';
 
 function App() {
 
@@ -23,7 +25,9 @@ function App() {
 
 
 
-
+CheckDiscount.propTypes = {
+  discount: PropTypes.number
+};
 
 
 

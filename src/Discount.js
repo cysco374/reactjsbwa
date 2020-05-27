@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import discount from './ProdukInfo';
 
 function CheckDiscount(props) {
-    const { isDiscount } = props;
+    const { isDiscount, discount } = props;
     if (isDiscount == "yes") {
       return (
-        <p>Diskon 50% off</p>
+        <p>Diskon {discount}% off</p>
       );
     }
     else if (isDiscount == "coming") {
